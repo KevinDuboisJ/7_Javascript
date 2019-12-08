@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JS PF project: het Document Object Model</title>
+<link rel="stylesheet" href="default.css">
+<style type="text/css" media="all">
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	color:#333;
+}
+.r-float {
+	float:right;
+	}
+.d-block {
+	display: block;
+}
+.center {
+	text-align: center;
+}
+.button {
+	font-size: 28px;
+	margin: 10px 0;
+	color: white;
+	border-radius: 5px;
+	background-color: #4682B4;
+}
+.message {
+	font-size: 48px;
+	margin-left: 40px;
+}
+.mt {
+	margin-top: 20px;
+}
+</style>
+<script type="text/javascript" src="javascript.js" defer></script>
+
+</head>
+<body>
+<div id="container" class="border clearfix">
+ <span id="goodDayMessage" class="d-block message"></span>
+  <h1 id="kop">Het Document Object Model</h1>
+  <!-- dit is HTML commentaar onzichtbaar in het beeld-->
+  <p><div class="r-float clearfix"><img src="https://via.placeholder.com/300" alt="Linda, een front-end programmeur" /><span id="date" class="d-block center">Date</span><span id="time" class="d-block center"></span></div>De meeste programmeurs <em>leven</em> op koffie</p>
+  <p>Veel programmeurs zijn liefhebbers van <a href="http://en.wikipedia.org/wiki/Science-fiction">science-fiction</a></p>
+  <div class="menu">
+    <h2>Onze programmeertalen</h2>
+    <ul>
+      <li>Javascript</li>
+      <li>PHP</li>
+      <li>ASP.Net</li>
+      <li>Java</li>
+    </ul>
+  </div>
+  <button id="time-button" class="d-block button">Time</button>
+</div>
+<div class="mt">
+	<label>
+        Paswoord
+        <span class="uitleg">(Minstens 6 tekens)</span>
+        <span id="paswoordFeedback" class="feedback"></span>
+        <input id="paswoord" type="password" autofocus>
+    </label>
+    <label>
+        Herhaal paswoord
+        <span class="uitleg">(Moet gelijk zijn aan paswoord)</span>
+        <span id="herhaalFeedback" class="feedback"></span>
+        <input id="herhaal" type="password">
+    </label>
+</div>
+<div>
+	<h1>Spaties</h1>
+	<label for="spatiesInput"> Input</label>
+	<span id="spatiesFeedback"></span>
+		<input type="text" id="spatiesInput" placeholder="write text here">
+
+		<button id="send-button-spaties" class="button">Send</button>
+</div>
+<div>
+	<h1>Klinkers</h1>
+	<label for="klinkersInput"> Input</label>
+	<span id="klinkersFeedback"></span>
+		<input type="text" id="klinkersInput" placeholder="write text here">
+</div>
+<div>
+	<h1>Palindroom</h1>
+	<label for="palindroomInput"> Input</label>
+	<span id="palindroomFeedback"></span>
+		<input type="text" id="palindroomInput" placeholder="write text here">
+</div>
+<div></div>
+	<ul id="standbeelden">
+        <li><a href="#" data-foto="vrijheidsbeeld" data-plaats="Belgie">Vrijheidsbeeld</a></li>
+        <li><a href="#" data-foto="moederland" data-plaats="Belgie">Het moederland roept</a></li>
+        <li><a href="#" data-foto="mannekepis">Manneke pis</a></li>
+        <li><a href="#" data-foto="verlosser">Christus de verlosser</a></li>
+    </ul>
+    <img id="afbeelding" alt="standbeeld" src="" style="display: none;">
+</div>
+<div id="dubbelspel">
+	<h1>Dubbelspel</h1>
+	<span id="spelFeedback"></span>
+	<input type="text" id="spelInput" placeholder="name 1">
+	<input type="text" id="spelInput2" placeholder="name 2">
+	<input type="text" id="spelInput3" placeholder="name 3">
+	<input type="text" id="spelInput4" placeholder="name 4">
+</div>
+<div id="plaats">
+	<h1>Plaats</h1>
+	<input type="text" placeholder="Plaats">
+</div>
+<ul id="landen">
+	<li><a href="javascript:void();" data-hoofdstad="Brussel"
+	data-oppervlakte="30528">België</a></li>
+	<li><a href="javascript:void();" data-hoofdstad="Amsterdam"
+	data-oppervlakte="41543">Nederland</a></li>
+	<li><a href="javascript:void();" data-hoofdstad="Parijs"
+	data-oppervlakte="551500">Frankrijk</a></li>
+</ul>
+<dl>
+	<dt>Hoofdstad</dt><dd id="hoofdstad"></dd>
+	<dt>Oppervlakte</dt><dd id="oppervlakte"></dd>
+</dl>
+
+</body>
+</html>
+
